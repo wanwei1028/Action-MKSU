@@ -15,7 +15,7 @@
     <linkfile dest="kernel_platform/build/prebuilts/kernel-build-tools" src="."/>
   </project>
   <project remote="google" name="kernel_platform/build/bazel_common_rules" path="kernel_platform/build/bazel_common_rules" revision="e7f054bdbfde827e7f00821674493429d9e3d14d" upstream="refs/heads/android15-release"/>
-  <project remote="clo-la" name="kernel_platform/external/bazel-skylib" path="kernel_platform/external/bazel-skylib" revision="01ca48a22d06962e465186124f1a783bff42f50d" upstream="refs/heads/android15-release"/>
+  <project remote="google" name="kernel_platform/external/bazel-skylib" path="kernel_platform/external/bazel-skylib" revision="01ca48a22d06962e465186124f1a783bff42f50d" upstream="refs/heads/android15-release"/>
   <project remote="google" name="kernel_platform/external/dtc" path="kernel_platform/external/dtc" revision="f3cb9f00adad24f00217cdede8c752cd15d53e9c" upstream="refs/heads/android15-release"/>
   <project remote="google" name="kernel_platform/external/python/absl-py" path="kernel_platform/external/python/absl-py" revision="9ae5a78fc57c3cd539398373ae39601a8b923e62" upstream="refs/heads/android15-release"/>
   <project remote="google" name="kernel_platform/external/stardoc" path="kernel_platform/external/stardoc" revision="d3b256f08d8496357070e52bdc7f44fa31490dc4" upstream="refs/heads/android15-release"/>
