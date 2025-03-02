@@ -14,22 +14,22 @@
   <project remote="google" name="kernel/prebuilts/build-tools" path="kernel_platform/prebuilts/kernel-build-tools" revision="666a41ca6c52a40deb8df1405cba12d2fc07637a" upstream="refs/tags/android-15.0.0_r0.59">
     <linkfile dest="kernel_platform/build/prebuilts/kernel-build-tools" src="."/>
   </project>
-  <project remote="google" name="kernel_platform/build/bazel_common_rules" path="kernel_platform/build/bazel_common_rules" revision="e7f054bdbfde827e7f00821674493429d9e3d14d" upstream="refs/heads/android15-release"/>
-  <project remote="google" name="kernel_platform/external/bazel-skylib" path="kernel_platform/external/bazel-skylib" revision="01ca48a22d06962e465186124f1a783bff42f50d" upstream="refs/heads/android15-release"/>
-  <project remote="google" name="kernel_platform/external/dtc" path="kernel_platform/external/dtc" revision="f3cb9f00adad24f00217cdede8c752cd15d53e9c" upstream="refs/heads/android15-release"/>
-  <project remote="google" name="kernel_platform/external/python/absl-py" path="kernel_platform/external/python/absl-py" revision="9ae5a78fc57c3cd539398373ae39601a8b923e62" upstream="refs/heads/android15-release"/>
-  <project remote="google" name="kernel_platform/external/stardoc" path="kernel_platform/external/stardoc" revision="d3b256f08d8496357070e52bdc7f44fa31490dc4" upstream="refs/heads/android15-release"/>
-  <project remote="google" name="kernel_platform/prebuilts/bazel/linux-x86_64" path="kernel_platform/prebuilts/bazel/linux-x86_64" revision="5c92123af5646d469fc53ef61994f5bca0306f66" upstream="refs/heads/android15-release"/>
-  <project remote="google" name="kernel_platform/prebuilts/build-tools" path="kernel_platform/prebuilts/build-tools" revision="8ec937894a863300ada5311507ad817ec6a0c932" upstream="refs/heads/llvm-r510928">
+  <project remote="google" name="platform/build/bazel_common_rules" path="kernel_platform/build/bazel_common_rules" revision="e7f054bdbfde827e7f00821674493429d9e3d14d" upstream="refs/heads/android15-release"/>
+  <project remote="google" name="platform/external/bazel-skylib" path="kernel_platform/external/bazel-skylib" revision="01ca48a22d06962e465186124f1a783bff42f50d" upstream="refs/heads/android15-release"/>
+  <project remote="google" name="platform/external/dtc" path="kernel_platform/external/dtc" revision="f3cb9f00adad24f00217cdede8c752cd15d53e9c" upstream="refs/heads/android15-release"/>
+  <project remote="google" name="platform/external/python/absl-py" path="kernel_platform/external/python/absl-py" revision="9ae5a78fc57c3cd539398373ae39601a8b923e62" upstream="refs/heads/android15-release"/>
+  <project remote="google" name="platform/external/stardoc" path="kernel_platform/external/stardoc" revision="d3b256f08d8496357070e52bdc7f44fa31490dc4" upstream="refs/heads/android15-release"/>
+  <project remote="google" name="platform/prebuilts/bazel/linux-x86_64" path="kernel_platform/prebuilts/bazel/linux-x86_64" revision="5c92123af5646d469fc53ef61994f5bca0306f66" upstream="refs/heads/android15-release"/>
+  <project remote="google" name="platform/prebuilts/build-tools" path="kernel_platform/prebuilts/build-tools" revision="8ec937894a863300ada5311507ad817ec6a0c932" upstream="refs/heads/llvm-r510928">
     <linkfile dest="kernel_platform/build/prebuilts/build-tools" src="."/>
   </project>
-  <project remote="google" name="kernel_platform/prebuilts/clang-tools" path="kernel_platform/prebuilts/clang-tools" revision="23c51c16550463e473a2b94553223a3b67578a5a" upstream="refs/heads/android15-release">
+  <project remote="google" name="platform/prebuilts/clang-tools" path="kernel_platform/prebuilts/clang-tools" revision="23c51c16550463e473a2b94553223a3b67578a5a" upstream="refs/heads/android15-release">
     <linkfile dest="kernel_platform/build/prebuilts/clang-tools" src="."/>
   </project>
-  <project remote="google" name="kernel_platform/prebuilts/jdk/jdk11" path="kernel_platform/prebuilts/jdk/jdk11" revision="fc3ab5eba756001a6118cf108c82b310733cf052" upstream="refs/tags/android-15.0.0_r0.59"/>
-  <project remote="google" name="kernel_platform/system/tools/mkbootimg" path="kernel_platform/tools/mkbootimg" revision="c40a04c0620c5a0dab87497857805b8d9b8a827a" upstream="refs/heads/android15-release"/>
-  <project remote="google" name="kernel_platform/toolchain/prebuilts/ndk/r23" path="kernel_platform/prebuilts/ndk-r23" revision="ee1d8202c75f31369cbadb18a840f4b47f70460d" upstream="refs/tags/android-15.0.0_r0.59"/>
-  <project remote="google" name="kernel_platform/prebuilts-master/clang/host/linux-x86" path="kernel_platform/prebuilts/clang/host/linux-x86" revision="921f6da692b1ffc96a0daa7e741373f0089d40b0" upstream="refs/heads/android15-release">
+  <project remote="google" name="platform/prebuilts/jdk/jdk11" path="kernel_platform/prebuilts/jdk/jdk11" revision="fc3ab5eba756001a6118cf108c82b310733cf052" upstream="refs/tags/android-15.0.0_r0.59"/>
+  <project remote="google" name="platform/system/tools/mkbootimg" path="kernel_platform/tools/mkbootimg" revision="c40a04c0620c5a0dab87497857805b8d9b8a827a" upstream="refs/heads/android15-release"/>
+  <project remote="google" name="toolchain/prebuilts/ndk/r23" path="kernel_platform/prebuilts/ndk-r23" revision="ee1d8202c75f31369cbadb18a840f4b47f70460d" upstream="refs/tags/android-15.0.0_r0.59"/>
+  <project remote="google" name="platform/prebuilts/clang/host/linux-x86" path="kernel_platform/prebuilts/clang/host/linux-x86" revision="921f6da692b1ffc96a0daa7e741373f0089d40b0" upstream="refs/heads/android15-release">
     <linkfile dest="kernel_platform/build/build-tools/sysroot" src="sysroot"/>
   </project>
 </manifest>
