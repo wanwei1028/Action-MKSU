@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://git.codelinaro.org/clo/la" name="clo-la"/>
+  <default remote="clo-la" revision="dummy_revision" sync-c="true" sync-tags="false"/>
+  <remote fetch="https://github.com/OnePlusOSS" name="origin"/>
+  
+  <!-- 新增Google AOSP remote -->
+  <remote name="aosp" fetch="https://android.googlesource.com/" review="https://android-review.googlesource.com/"/>
+
+  <project remote="origin" name="android_kernel_common_oneplus_sm8750" 
+           path="kernel_platform/common" 
+           revision="oneplus/sm8750_v_15.0.0_oneplus_13">
+    <linkfile dest="kernel_platform/.source_date_epoch_dir" src="."/>
+  </project>
+
+  <project remote="origin" name="android_kernel_oneplus_sm8750" 
+           path="kernel_platform/msm-kernel" 
+           revision="oneplus/sm8750_v_15.0.0_oneplus_13">
+    <linkfile dest="kernel_platform/WORKSPACE" src="bazel.WORKSPACE"/>
+    <linkfile dest="kernel_platform/build_with_bazel.py" src="build_with_bazel.py"/>
+  </project>
+
+  <project remote="origin" name="android_kernel_modules_and_devicetree_oneplus_sm8750" 
+           path="./" 
+           revision="oneplus/sm8750_v_15.0.0_oneplus_13"/>
+
+  <!-- 替换CLA工具链项目为Google AOSP对应项 -->
+  <project remote="aosp" name="kernel/prebuilts/build-tools" 
+           path="kernel_platform/prebuilts/kernel-build-tools" 
+           revision="main"
+           groups="ddk"
+           clone-depth="1">
+    <linkfile dest="kernel_platform/build/prebuilts/kernel-build-tools" src="."/>
+  </project>
+
+  <project remote="aosp" name="platform/build/bazel_common_rules" 
+           path="kernel_platform/build/bazel_common_rules" 
+           revision="main"
+           groups="ddk"/>
+
+  <project remote="aosp" name="platform/external/bazel-skylib" 
+           path="kernel_platform/external/bazel-skylib" 
+           revision="main"
+           groups="ddk-external"/>
+
+  <project remote="aosp" name="platform/external/dtc" 
+           path="kernel_platform/external/dtc" 
+           revision="main"/>
+
+  <project remote="aosp" name="platform/external/python/absl-py" 
+           path="kernel_platform/external/python/absl-py" 
+           revision="main"
+           groups="ddk-external"/>
+
+  <project remote="aosp" name="platform/prebuilts/build-tools" 
+           path="kernel_platform/prebuilts/build-tools" 
+           revision="main"
+           clone-depth="1"
+           groups="ddk">
+    <linkfile dest="kernel_platform/build/prebuilts/build-tools" src="."/>
+  </project>
+
+  <project remote="aosp" name="platform/prebuilts/clang-tools" 
+           path="kernel_platform/prebuilts/clang-tools" 
+           revision="main"
+           clone-depth="1">
+    <linkfile dest="kernel_platform/build/prebuilts/clang-tools" src="."/>
+  </project>
+
+  <project remote="aosp" name="platform/prebuilts/jdk/jdk11" 
+           path="kernel_platform/prebuilts/jdk/jdk11" 
+           revision="main"
+           clone-depth="1"/>
+
+  <project remote="aosp" name="platform/system/tools/mkbootimg" 
+           path="kernel_platform/tools/mkbootimg" 
+           revision="main"/>
+
+  <project remote="aosp" name="toolchain/prebuilts/ndk/r26" 
+           path="kernel_platform/prebuilts/ndk-r23" 
+           revision="main"
+           clone-depth="1"
+           groups="ddk"/>
+
+  <project remote="aosp" name="platform/prebuilts/clang/host/linux-x86" 
+           path="kernel_platform/prebuilts/clang/host/linux-x86" 
+           revision="main"
+           clone-depth="1"
+           groups="ddk"/>
+
+  <project remote="aosp" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" 
+           path="kernel_platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" 
+           revision="main"
+           clone-depth="1"
+           groups="ddk">
+    <linkfile dest="kernel_platform/build/build-tools/sysroot" src="sysroot"/>
+  </project>
+</manifest>
